@@ -1,0 +1,109 @@
+/* General */
+body {
+    background-color: #E3E2E2;
+}
+
+h1 {
+    margin-left: 20%;
+    margin-top: 40px;
+    font-size: 3em;
+    font-family: 'Grand Hotel', cursive;
+}
+
+p {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Mitr', sans-serif;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+
+/* Navigation */
+.navigation {
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A68884;
+    margin-top: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #774D4B;
+}
+
+.active {
+    background-color: #774D4B;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Social Media Icons */
+
+.fa-twitter-square {
+    color: #00ACED;
+}
+
+.fa-square {
+    color: #6441A4;
+}
+
+.fa-twitch {
+    color: #ffffff;
+}
+
+.fa-facebook-square {
+    color: #3B5998;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+/* Images */
+
+.header img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxshadow {
+    position: relative;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .5);
+}

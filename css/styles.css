@@ -13,16 +13,26 @@ p {
     font-family: 'Mitr', sans-serif;
 }
 
-.index_content p {
-    margin-left: 15%;
+.index-content {
+    display: flex;
+    margin-right: 15%;
+    margin-left: 10%;
+}
+
+.index-content p {
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: justify;
     text-indent: 2em;
 }
 
-.index_content div{
-    display: flex;
-    margin-right: 15%;
-    margin-left: 10%;
+.index-content .two-thirds {
+    width: 66%;
+}
+
+.index-content .one-third {
+    width: 33%;
+    margin-top: 5%;
 }
 
 .about_me_content {

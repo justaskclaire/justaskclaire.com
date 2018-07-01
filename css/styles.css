@@ -26,11 +26,11 @@ p {
     text-indent: 2em;
 }
 
-.index-content .two-thirds {
+.index-content .index-welcome {
     width: 66%;
 }
 
-.index-content .one-third {
+.index-content .index-twitter {
     width: 33%;
     margin-top: 5%;
 }
@@ -146,4 +146,57 @@ footer a {
 .about_me_content img {
     width: 30%;
     height: 30%;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    .header img {
+        width: 100%;
+    }
+
+    /* Make navigation take up full screen width */
+    ul {
+        width: 100%;
+    }
+
+    /* Make navigation buttons evenly spaced across screen */
+    li {
+        flex-grow: 1;
+    }
+
+    .index-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .index-content p {
+        text-align: justify;
+        text-indent: 2em;
+    }
+
+    .index-content .index-welcome {
+        width: 100%;
+    }
+    
+    .index-content .index-twitter {
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .index-welcome p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+} 
+
+@media screen and (max-width: 316px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }

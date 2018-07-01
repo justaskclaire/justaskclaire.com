@@ -95,10 +95,17 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 footer a {
     text-decoration: none;
+}
+
+footer div {
+    flex-grow: 1;
 }
 
 /* Social Media Icons */
@@ -107,12 +114,18 @@ footer a {
     color: #00ACED;
 }
 
-.fa-square {
-    color: #6441A4;
+.twitch-logo a span {
+    width: 56px;
+    height: 56px;
 }
 
 .fa-twitch {
     color: #ffffff;
+    background-color: #6441A4;
+    border-radius: 5px;
+    height: 56px;
+    margin-top: 6px;
+    vertical-align: center;
 }
 
 .fa-facebook-square {
@@ -192,6 +205,27 @@ footer a {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    .about_me_content {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+
+    .about_me_content img {
+        width: 60%;
+        height: 60%;
+    }
+
+    h1 {
+        margin-left: 10%;
+    }
+
+    .about_me_content p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+    }
 } 
 
 @media screen and (max-width: 316px) {
@@ -199,4 +233,8 @@ footer a {
         display: flex;
         flex-direction: column;
     }
+
+    .fa-facebook-square {
+        margin-top: 6px;
+    }    
 }

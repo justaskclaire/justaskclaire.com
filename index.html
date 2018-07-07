@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Mitr" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         
@@ -17,14 +18,28 @@
 
         <!-- Navigation -->
 
-        <div class="navigation">
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <!-- class="navigation" -->
+        <div class="topnav" id="myTopnav"> 
+            <a href="index.html" class="active">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="loadRespNav()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+
+        <script>
+            function loadRespNav() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
 
         <!-- Content -->
 

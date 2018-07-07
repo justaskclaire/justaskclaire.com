@@ -99,7 +99,7 @@ p {
   
   /* Mobile-Friendly Navigation */
   @media screen and (max-width: 768px) {
-    .topnav a:not(:first-child) {
+    .topnav a:not(.active) {
         display: none;
     }
 
@@ -169,7 +169,7 @@ footer div {
     color: #3B5998;
 }
 
-.fa-linkedin {
+.fa-linkedin-square {
     color: #0077B5;
 }
 

@@ -9,6 +9,12 @@ h1 {
     font-family: 'Grand Hotel', cursive;
 }
 
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-left: 10%;
+    }
+}
+
 p {
     font-family: 'Mitr', sans-serif;
 }
@@ -35,6 +41,41 @@ p {
     margin-top: 5%;
 }
 
+@media screen and (max-width: 768px) {
+    .index-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .index-content p {
+        text-align: justify;
+        text-indent: 2em;
+    }
+
+    .index-content .index-welcome {
+        width: 100%;
+    }
+    
+    .index-content .index-twitter {
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .index-welcome p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .index-welcome .welcome-paragraph {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
 .about_me_content {
     display: flex;
     align-items: center;
@@ -47,6 +88,21 @@ p {
     margin-left: 7%;
     text-align: justify;
 }
+
+@media screen and (max-width: 768px) {
+    .about_me_content {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+
+    .about_me_content p {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+    }
+} 
+
 
 /* Navigation */
 
@@ -187,6 +243,12 @@ footer div {
     margin-right: auto;
 }
 
+@media screen and (max-width: 768px) {
+    .header img {
+        width: 100%;
+    }
+}
+
 .boxshadow {
     position: relative;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, .5);
@@ -198,72 +260,14 @@ footer div {
     height: 30%;
 }
 
-/* Mobile */
-
 @media screen and (max-width: 768px) {
-    .header img {
-        width: 100%;
-    }
-
-    /* Make navigation take up full screen width */
-    ul {
-        width: 100%;
-    }
-
-    /* Make navigation buttons evenly spaced across screen */
-    li {
-        flex-grow: 1;
-    }
-
-    .index-content {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .index-content p {
-        text-align: justify;
-        text-indent: 2em;
-    }
-
-    .index-content .index-welcome {
-        width: 100%;
-    }
-    
-    .index-content .index-twitter {
-        width: 100%;
-        margin-top: 5%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .index-welcome p {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .about_me_content {
-        flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px; 
-    }
-
     .about_me_content img {
         width: 60%;
         height: 60%;
     }
+}
 
-    h1 {
-        margin-left: 10%;
-    }
-
-    .about_me_content p {
-        margin-left: 5%;
-        margin-right: 5%;
-        text-align: justify;
-    }
-} 
+/* Mobile */
 
 @media screen and (max-width: 316px) {
     footer {

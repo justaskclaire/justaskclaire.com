@@ -5,22 +5,45 @@
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Mitr" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        
+        <!-- Header -->
+
         <div class="header">
             <a href="index.html"><img class="boxshadow" src="img/jac_header.png" alt="Just Ask Claire"></a>
         </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li class="active"><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+        <!--Navigation bar-->
+        <div class="topnav" id="myTopnav"> 
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="loadRespNav()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+
+        <script>
+            function loadRespNav() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>    
+        <!--end of Navigation bar-->
+
         <div class="content">
             
         </div>
+
         <footer>
             <!-- Twitter -->
             <div>
@@ -32,10 +55,9 @@
             </div>
             
             <!-- Twitch -->
-            <div>
+            <div class="twitch-logo">
                 <a href="https://www.twitch.tv/justaskclaire" target="_blank">
                     <span class="fa-stack fa-fw fa-2x">
-                        <i class="fas fa-square fa-stack-2x"></i>
                         <i class="fab fa-twitch fa-stack-1x"></i>                    
                     </span>
                 </a>
@@ -54,7 +76,7 @@
             <div>
                 <a href="https://www.linkedin.com/in/claire-tolbert-987b9987" target="_blank">
                     <span class="fa-stack fa-fw fa-2x">
-                        <i class="fab fa-linkedin fa-2x"></i>              
+                        <i class="fab fa-linkedin-square fa-2x"></i>              
                     </span>
                 </a>
             </div>

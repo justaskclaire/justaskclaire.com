@@ -5,8 +5,9 @@ body {
 
 h1 {
     margin-left: 20%;
-    font-size: 3em;
-    font-family: 'Grand Hotel', cursive;
+    font-size: 3.5em;
+    margin-top: 0% !important;
+    font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 @media screen and (max-width: 768px) {
@@ -16,7 +17,9 @@ h1 {
 }
 
 p {
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Bree Serif', serif;
+    font-weight: 100;
+    font-size: 1.2em;
 }
 
 .index-content {
@@ -78,7 +81,6 @@ p {
     }
 
     .index-welcome .welcome-paragraph {
-        margin-top: auto;
         margin-bottom: auto;
     }
 }

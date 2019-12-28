@@ -1,0 +1,67 @@
+h1, #remaining {
+    font-size: 50px;
+    border-bottom: 1px dotted black;
+    margin: auto;
+    text-align: center;
+}
+
+h2,h4,h6 {
+    font-family: 'Raleway';
+}
+
+table {
+    font-family: 'Convergence';
+    font-size: 14px;
+    padding: 10px;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+      font-size: 30px;
+    }
+
+    input {
+        font-size: 30px;
+    }
+
+    body {
+        font-size: 30px;
+    }
+}
+
+td {
+    padding: 10px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+button {
+    font-family: 'Convergence';
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 0 9px #999;
+    border: 0;
+    background-color: white;
+    margin: 5px;
+    padding: 20px;
+}
+
+button:hover {background-color: #ECECEC}
+
+button:active {
+  background-color: #ECECEC;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.budgetier-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <title>Just Ask Claire</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/budgetier.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/budgetier.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+    <body class="w3-light-grey">
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+            <div class="w3-row-padding">       
+                <div class="w3-bar w3-card w3-blue-grey w3-margin-bottom">
+                    <a href="index.html" class="w3-bar-item w3-hover-light-grey w3-button">Home</a>
+                    <a href="resume.html" class="w3-bar-item w3-hover-light-grey w3-button">Resume</a>
+                    <a href="slacker.html" class="w3-bar-item w3-hover-light-grey w3-button">Slacker</a>
+                    <a href="budgetier.html" class="w3-bar-item w3-hover-light-grey w3-button">Budgetier</a>
+                    <!--<a href="#" class="w3-bar-item w3-hover-light-grey w3-button">Blog</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="budgetier-container">
+            <h1>
+            How much can I spend?
+            </h1>
+            <h4>
+            Always wanted to know how much you should <i>actually</i> be allowed to spend on yourself?<br>
+            Use this tool to find out how much to allocate to bills and savings per paycheck...<br>
+            And then see how much you have left to splurge!
+            </h4>
+            <div>
+            <table>
+                <tr>
+                <td>
+                    Net Income per Paycheck
+                </td>
+                <td>
+                    <input type="text" id="paycheck" placeholder="1000" required/>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    Paycheck Frequency
+                </td>
+                <td>
+                    <input type="radio" name="freq" id="freq" value="1">Once a Month<br>
+                    <input type="radio" name="freq" id="freq" value="2">Semi-Monthly/Bi-weekly*<br>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    Total Monthly Bills
+                </td>
+                <td>
+                    <input type="text" placeholder="500" id="bills" required/>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    How much do you currently/<br>would you like to put in savings?<br>            
+                </td>
+                <td>
+                    <input type="text" placeholder="15%" id="savings" required/>
+                </td>
+                </tr>
+            </table>
+            <h6>
+            * NOTE: Every other week is treated as semi-monthly. <br>
+            When you get your "extra" paycheck twice in the year, roll that towards the next month's budget.
+            </h6>
+            <button onclick="calculate()"><span>Calculate</span></button>
+            <div>
+            <div>
+            <h2>
+                Your remaining spending amount <i>per paycheck</i> is...
+            </h2>
+            <div id="remaining">
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

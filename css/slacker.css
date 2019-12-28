@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+.slacker-button {
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: #b9cfd6;
+  margin: 10px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.slacker-button:hover {
+  background-color: #4e7a87;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.slacker-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.slacker-input {
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 15px;
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
+.slacker-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

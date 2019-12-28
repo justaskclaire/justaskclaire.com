@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="js/slacker.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/slacker.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Solway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+            <div class="w3-bar w3-card w3-blue-grey w3-margin-bottom">
+                <a href="index.html" class="w3-bar-item w3-hover-light-grey w3-button">Home</a>
+                <a href="resume.html" class="w3-bar-item w3-hover-light-grey w3-button">Resume</a>
+                <a href="slacker.html" class="w3-bar-item w3-hover-light-grey w3-button">Slacker</a>
+                <!--<a href="#" class="w3-bar-item w3-hover-light-grey w3-button">Instant Budgetier</a>
+                <a href="#" class="w3-bar-item w3-hover-light-grey w3-button">Blog</a> -->
+            </div>
+
+            <div class="slacker-container">
+                <form>
+                    <input id="inputText" type="text" class="slacker-input" placeholder="your text here"></input>
+                    <input id="reset" type="reset" class="slacker-input" value="Clear"></input>
+                </form>
+                <div>
+                    <button class="slacker-button" onClick="spooky()">👻</button>
+                    <button class="slacker-button" onClick="spookyClap()">👻👏</button>
+                    <button class="slacker-button" onClick="clap()">👏</button>
+                    <button class="slacker-button" onClick="sassyClap()">👏💁</button>
+                    <button class="slacker-button" onClick="sassy()">💁</button>
+                </div>
+                <div id="clear">
+                    <button class="slacker-button" onClick="fixText()">❌</button>
+                </div>
+                <div id="results">
+                    <input id="code" type="text" class="slacker-input"></input>
+                    <button id="btn_copy" class="slacker-button" onClick="copyText()">Copy to Clipboard</button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+

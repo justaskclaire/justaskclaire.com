@@ -5,3 +5,12 @@ html,body,h1,h3,h4,h5,h6 {
 h2 {
     font-family: 'Lobster Two', cursive !important;
 }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container-vert {
+    display: flex;
+    flex-direction: column;
+}

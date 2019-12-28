@@ -22,7 +22,7 @@
 
             <div class="flex-container">
                 <div class="w3-margin">
-                    <a class="twitter-timeline" href="https://twitter.com/JustAskClaire?ref_src=twsrc%5Etfw" data-tweet-limit="3" data-width="520">Tweets by JustAskClaire</a> 
+                    <a class="twitter-timeline" href="https://twitter.com/JustAskClaire?ref_src=twsrc%5Etfw" data-tweet-limit="3" data-width="400">Tweets by JustAskClaire</a> 
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                     <a class="twitter-follow-button"
@@ -42,14 +42,11 @@
                         <p>By day, I'm a Performance Engineer and .NET Developer at Alkami Technology. By night, I'm addicted to building silly tools and playing video games. Sometimes I stream these events on Twitch.</p>
                     </div>
 
-                    <div class="w3-margin">
-                        <!-- Add a placeholder for the Twitch embed -->
-                        <div id="twitch-embed"></div>
+                    <div class="w3-margin w3-margin-top">
+                        <div id="twitch-embed" class="w3-margin"></div>
 
-                        <!-- Load the Twitch embed script -->
                         <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-                        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
                         <script type="text/javascript">
                         new Twitch.Embed("twitch-embed", {
                             width: 854,

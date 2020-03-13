@@ -63,8 +63,6 @@ function setMonthlyTotalIncome(paycheck, freq) {
     
     switch (freq) {
       case '1':
-        monthlyTotalIncome = paycheck * freq;
-        break;
       case '2':
         monthlyTotalIncome = paycheck * freq;
         break;

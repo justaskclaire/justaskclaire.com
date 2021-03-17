@@ -19,7 +19,7 @@ function calculate() {
         return;
     }
     else if (!savings) {
-        alert("Please enter what percentage of your income would you like to put in savings.")
+        alert("Please enter what percentage of your income you would like to put in savings.")
         return;
     }
     
@@ -27,21 +27,15 @@ function calculate() {
     console.log("Frequency: " + freq);
     console.log("Bills: " + bills);
     console.log("Savings: " + savings);
-      
-    // Calculate total monthly income based on how often paycheck is received
-    var monthlyTotalIncome = setMonthlyTotalIncome(paycheck, freq);
     
     // Calculate amount to put towards bills per paycheck
     var billAmtPerPaycheck = bills / freq;
-    console.log("Bill Amt Per Paycheck: " + billAmtPerPaycheck);
     
     // Calculate amount to put towards savings
     var savingsAmtPerPaycheck = paycheck * savings / 100;
-    console.log("Savings Amt Per Paycheck: " + savingsAmtPerPaycheck);
     
     // Calculate remaining amount per paycheck for spending
     var spendingAmtPerPaycheck = paycheck - billAmtPerPaycheck - savingsAmtPerPaycheck;
-    console.log("Spending Amt Per Paycheck: " + spendingAmtPerPaycheck);
     
     document.getElementById('remaining').innerHTML = '$' + spendingAmtPerPaycheck;
 }
@@ -56,21 +50,4 @@ function getFrequencyValue() {
     }
     
     return freq_value;
-}
-  
-function setMonthlyTotalIncome(paycheck, freq) {
-    var monthlyTotalIncome = 0;
-    
-    switch (freq) {
-      case '1':
-      case '2':
-        monthlyTotalIncome = paycheck * freq;
-        break;
-      default:
-        alert('Please select Paycheck Frequency');
-    }
-    
-    console.log("Monthly Total Income:" + monthlyTotalIncome);
-    
-    return monthlyTotalIncome;
 }

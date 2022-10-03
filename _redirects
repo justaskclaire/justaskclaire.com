@@ -1,5 +1,0 @@
-# Redirects from what the browser requests to what we serve
-/index.html		/
-/budgetier.html		/budgetier
-/resume.html		/resume
-/slacker.html		/slacker

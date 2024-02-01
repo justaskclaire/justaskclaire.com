@@ -1,12 +1,5 @@
 var output = '';
-document.getElementById('results').style.display = "none";
-
-// Convert text to use letter images
-function spooky() {
-  output = '';  
-  output = createResponse(getRequest(), 'spooky');  
-  document.getElementById('code').value = output;
-}
+//document.getElementById('results').style.display = "none";
 
 // Add clap emojis between words
 function clap() {
@@ -30,9 +23,7 @@ function getRequest() {
 
 // Returns response from respective get calls
 function createResponse(input, formatType) {
-  if (formatType == 'spooky')
-    return getSpookyResponse(input);
-  else if (formatType == 'clap')
+  if (formatType == 'clap')
     return getClapResponse(input);  
   else if (formatType == 'sassy')
     return getSassyResponse(input);
@@ -59,38 +50,6 @@ function getClapResponse(input) {
   return output.toUpperCase();
 }
 
-// Convert each character to text for spooky letters in slack
-function getSpookyResponse(input) {
-  for (var i = 0; i < input.length; i++) {
-    if (input[i] == ' ')
-      output += ':xspace1:'
-    else if (input[i] == '!')
-      output += ':xexclamation1:'
-    else if (input[i] == ',')
-      output += ':xcomma1:'
-    else if (input[i] == '#')
-      output += ':xoctothorpe1:'
-    else if (input[i] == '?')
-      output += ':xquestion1:'
-    else if (input[i] == '\'')
-      output += ':xapostrophe1:'
-    else if (input[i] == '.')
-      output += ':xperiod1:'
-    else
-      output += ':x' + input[i] + '1:'
-  }  
-  return output;
-}
-
-// Call getSpookyResponse
-// Then replace spaces with clap emojis
-function spookyClap() {
-  output = '';
-  output = createResponse(getRequest(), 'spooky');
-  output = output.split(':xspace1:').join(' 👏 ').toUpperCase();
-  document.getElementById('code').value = output;
-}
-
 function sassyClap() {
   output = '';
   output = createResponse(getRequest(), 'sassy').split(" ").join(" 👏 ");
@@ -100,8 +59,8 @@ function sassyClap() {
 // Copy text in output field
 function copyText() {
   var copyText = document.getElementById("code");
-  copyText.select();
-  document.execCommand("copy");
+  navigator.clipboard.writeText(copyText.select());
+  //document.execCommand("copy");
 }
 
 // Removes emojis from input
